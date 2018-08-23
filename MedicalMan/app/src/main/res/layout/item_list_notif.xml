@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="15dp"
+    android:background="@color/mm_ziti_bai"
+    android:paddingRight="15dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_item"
+        android:text="qqqqqqqq"
+        android:textSize="14sp"
+        android:textColor="@color/c33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="end"
+            android:id="@+id/tv_item_time"
+            android:textColor="@color/c_99"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>

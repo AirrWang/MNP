@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.Dialog.Alert.Self" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <!--修改AlertDialog按钮的颜色-->
+        <item name="colorAccent">@color/c33</item>
+    </style>
+
+    <style name="Toobar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--导航栏底色-->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <!--&lt;!&ndash;&lt;!&ndash;状态栏底色&ndash;&gt;&ndash;&gt;-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--&lt;!&ndash;导航栏上的标题颜色&ndash;&gt;-->
+        <!--<item name="android:textColorPrimary">@color/c_zi_ti_color_1_ffffff</item>-->
+        <!--&lt;!&ndash;Activity窗口的颜色&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@color/c_f6</item>-->
+        <!--&lt;!&ndash;按钮选中或者点击获得焦点后的颜色&ndash;&gt;-->
+        <!--<item name="colorAccent">@color/c_f6</item>-->
+        <!--和 colorAccent相反，正常状态下按钮的颜色-->
+        <!--Toolbar返回按钮颜色更改在这-->
+        <item name="colorControlNormal">@color/mm_ziti_bai</item>
+        <!--Button按钮正常状态颜色-->
+        <!--<item name="colorButtonNormal">@color/c_f6</item>-->
+        <!--EditText 输入框中字体的颜色-->
+        <!--<item name="editTextColor">@color/c_f6</item>-->
+    </style>
+
+    <style name="def_progress_style">
+        <item name="midlle_layer_progress_color">#ffffff</item>
+        <item name="midlle_layer_progress_width">1dp</item>
+        <item name="midlle_layer_small_circle_solide_color">#ffffff</item>
+        <item name="midlle_layer_small_circle_stroke_color">#ffffff</item>
+        <item name="midlle_layer_small_circle_size">6dp</item>
+        <item name="midlle_layer_small_circle_stroke_width">4dp</item>
+    </style>
+
+    <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+        <!-- float_box为我们定义的窗口背景 ，这个不是必须的-->
+        <item name="android:windowBackground">@drawable/float_box</item>
+    </style>
+
+    <!-- popupwindow 动画 -->
+    <style name="AnimBottom">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/out_anim</item>
+    </style>
+</resources>

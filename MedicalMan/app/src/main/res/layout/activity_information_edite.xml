@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2"
+    android:orientation="vertical"
+    tools:context="com.mm.medicalman.Mine.InformationEditeActivity">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:id="@+id/user_info_edite_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/mm_ziti_bai"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="头像"
+            android:textColor="@color/c33"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mine_userpic"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            fresco:fadeDuration="1"
+            fresco:placeholderImageScaleType="focusCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/mm_ziti_bai"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="昵称"
+            android:textColor="@color/c33"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="end|right"
+            android:textColor="#666666"
+            android:textColorHint="#666666"
+            android:textSize="14sp"
+            android:maxLines="2"
+            tools:text="似懂非懂是数据的房间很大空" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/mm_ziti_bai"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="性别"
+            android:textColor="@color/c33"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="女"
+            android:layout_marginBottom="15dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/mm_ziti_bai"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="个性签名"
+            android:textColor="@color/c33"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_sigin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="end|right"
+            android:textColor="#666666"
+            android:textColorHint="#666666"
+            android:maxLines="2"
+            android:textSize="14sp"
+            tools:text="似懂非懂是数据的房间很大空间苏东坡佛水电费快捷" />
+
+    </LinearLayout>
+
+</LinearLayout>

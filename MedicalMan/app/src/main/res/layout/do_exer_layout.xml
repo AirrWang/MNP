@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/mm_ziti_bai"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mm.medicalman.Tool.MixtureTextView
+                android:id="@+id/mtv_1"
+                android:text="sfas"
+                android:textColor="@color/c33"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="78dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="21dp"
+                    fresco:fadeDuration="1"
+                    fresco:placeholderImage="@drawable/choise_fragen"
+                    fresco:placeholderImageScaleType="fitCenter" />
+            </com.mm.medicalman.Tool.MixtureTextView>
+            <com.mm.medicalman.Tool.MyListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/mlv_options"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0.5dp"
+                        android:background="@color/c_99"/>
+                    <TextView
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:text="试题详解"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0.5dp"
+                        android:background="@color/c_99"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    tools:text="答案"/>
+                <TextView
+                    android:id="@+id/tv_analysis"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    tools:text="解析"/>
+                <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    tools:text="考点"/>
+                <LinearLayout
+                    android:id="@+id/ll_nd"
+                    android:visibility="invisible"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:text="难度"/>
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sd_1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        fresco:fadeDuration="1"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/difficulty_not"
+                        fresco:placeholderImageScaleType="fitCenter" />
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sd_2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        fresco:fadeDuration="1"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/difficulty_not"
+                        fresco:placeholderImageScaleType="fitCenter" />
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sd_3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        fresco:fadeDuration="1"
+                        fresco:actualImageScaleType="fitCenter"
+                        fresco:placeholderImage="@drawable/difficulty_not"
+                        fresco:placeholderImageScaleType="fitCenter" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

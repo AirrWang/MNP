@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mm.medicalman.Home.MockActivity">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/textView4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="41dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:fadeDuration="3"
+                fresco:placeholderImage="@color/colorPrimaryDark"
+                fresco:placeholderImageScaleType="focusCrop"
+                fresco:roundedCornerRadius="4dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp"
+                tools:text="某某" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_his"
+                android:layout_below="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="74dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:text="最新成绩"
+                    />
+                <TextView
+                    android:id="@+id/tv_latest_achievements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="#30a2be"
+                    tools:text="正确率100%  00:90"
+                    android:layout_marginRight="57.5dp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_his"
+                android:layout_marginEnd="46dp"
+                android:layout_marginLeft="74dp"
+                android:layout_marginRight="46dp"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="46dp"
+                android:textColor="@color/c33"
+                android:textSize="15sp"
+                android:text="考试时间" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_his"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="46dp"
+                android:layout_toEndOf="@+id/textView8"
+                android:layout_toRightOf="@+id/textView8"
+                android:textColor="@color/c33"
+                android:textSize="15sp"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginEnd="46dp"
+                android:layout_marginLeft="74dp"
+                android:layout_marginRight="46dp"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/c33"
+                android:textSize="15sp"
+                android:text="总题数    " />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/textView10"
+                android:layout_toRightOf="@+id/textView10"
+                android:textColor="@color/c33"
+                android:textSize="15sp"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:layout_marginEnd="46dp"
+                android:layout_marginLeft="74dp"
+                android:layout_marginRight="46dp"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/c33"
+                android:textSize="15sp"
+                android:text="出题规则" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView11"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/textView12"
+                android:layout_toRightOf="@+id/textView12"
+                android:textColor="@color/c33"
+                android:textSize="15sp"
+                tools:text="TextView" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginLeft="74dp"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/c_99"
+                android:textSize="12sp"
+                android:text="计分规则：  " />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/textView14"
+                android:layout_toRightOf="@+id/textView14"
+                android:textColor="@color/c_99"
+                android:textSize="12sp"
+                tools:text="TextView" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/uumber_one"
+                android:text="全真模拟" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/button4"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:background="@drawable/number_two"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:text="智能考试" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/button5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:background="@drawable/number_three"
+                android:textColor="#ffffff"
+                android:text="优先未做题" />
+            <TextView
+                android:layout_below="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/ll_1"
+    android:background="@color/mm_ziti_bai"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        fresco:fadeDuration="1"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:placeholderImage="@drawable/choise_fragen"
+        fresco:placeholderImageScaleType="fitCenter" />
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/c33"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

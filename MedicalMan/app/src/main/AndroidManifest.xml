@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mm.medicalman">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从sdcard中读取数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 创建文件夹的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".MmApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e862d91f594dd14fa94d0b3234dbb80c" />
+        <!-- 声明定位service -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <receiver
+            android:name=".Receiver.MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.mm.medicalman" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan|stateHidden" />
+        <activity
+            android:name=".RegisteredActivity"
+            android:label="注册"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistIsEndActivity"
+            android:label="注册时密码设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+           />
+        <activity
+            android:name=".AcH5Activity"
+            android:label="H5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AcH5PostActivity"
+            android:label="H5Post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.HomeNurseExamActivity"
+            android:label="护士执业资格考试"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.TimeTableActivity"
+            android:label="课表查询"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.InformationEditeActivity"
+            android:label="个人资料修改"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.CampusActivity"
+            android:label="校园通"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.MineSetActivity"
+            android:label="设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.AboutActivity"
+            android:label="关于"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.ClearCacheActivity"
+            android:label="清除缓存"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.FeedbackActivity"
+            android:label="意见反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.MineUpDataActivity"
+            android:excludeFromRecents="true"
+            android:label="检查更新 "
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".Tool.TouXiangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdLoginRegisteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.PracticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.AchievementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.QuerryScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.CircleIcBigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.DoExerciseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.MockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.ExaminationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.LoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.YearsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.WrongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.MineLoveExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.SiginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.SiginHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.ExaminationResultsActivity"
+            android:label="考试报告"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.MineMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.ExamHisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mine.CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Info.AcH5InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.OpenSclloActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity android:name=".Mine.BindActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Mine.BindSchoolInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ThirdLoginActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

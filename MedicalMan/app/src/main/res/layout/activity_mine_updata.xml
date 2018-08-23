@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/mine_updata_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/mm_ziti_bai"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/mine_updata_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:textColor="#e6e6e6"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="132"
+        android:background="@color/mm_ziti_bai"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/mine_updata_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="48.5dp"
+            android:layout_marginTop="11.5dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/c33"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/mine_updata_now"
+            android:layout_width="106dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_73c1d5_5dp"
+            android:text="立即安装"
+            android:textColor="@color/mm_ziti_bai"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

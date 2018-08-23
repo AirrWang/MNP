@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mm_ziti_bai"
+    android:orientation="vertical"
+    tools:context="com.mm.medicalman.Home.ExaminationResultsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="151.5dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sd_bg"
+            android:layout_width="match_parent"
+            android:layout_height="151.5dp"
+            fresco:fadeDuration="3"
+            fresco:placeholderImage="@drawable/report_bg"
+            fresco:placeholderImageScaleType="focusCrop" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sd_bg_small"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="22.5dp"
+            android:layout_marginTop="25.5dp"
+            fresco:fadeDuration="1"
+            fresco:placeholderImage="@drawable/grage_icon"
+            fresco:placeholderImageScaleType="fitCenter" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/textView26"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginTop="33dp"
+            android:layout_toEndOf="@+id/sd_bg_small"
+            android:layout_toRightOf="@+id/sd_bg_small"
+            fresco:fadeDuration="1"
+            fresco:placeholderImage="@drawable/diamonds"
+            fresco:placeholderImageScaleType="fitCenter" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/textView27"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26"
+            android:layout_below="@+id/textView26"
+            android:layout_marginTop="27dp"
+            fresco:fadeDuration="1"
+            fresco:placeholderImage="@drawable/diamonds"
+            fresco:placeholderImageScaleType="fitCenter" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/textView28"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_alignLeft="@+id/textView27"
+            android:layout_alignStart="@+id/textView27"
+            android:layout_below="@+id/textView27"
+            android:layout_marginTop="26dp"
+            fresco:fadeDuration="1"
+            fresco:placeholderImage="@drawable/diamonds"
+            fresco:placeholderImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25.5dp"
+            android:layout_toEndOf="@+id/textView26"
+            android:layout_toRightOf="@+id/textView26"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:text="您已回答1200道题" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29"
+            android:layout_below="@+id/textView29"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:text="答错40题" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29"
+            android:layout_below="@+id/textView30"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:text="答题正确率80%" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/mm_ziti_bai" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/r_below_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp">
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d8d8d8"
+             />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="48.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/textView34"
+            android:layout_toStartOf="@+id/textView34"
+            android:gravity="center"
+            android:text="错题解析"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="48.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/textView34"
+            android:layout_toRightOf="@+id/textView34"
+            android:gravity="center"
+            android:text="重新作答"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="1dp"
+            android:layout_height="48.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#d8d8d8" />
+    </RelativeLayout>
+
+</LinearLayout>

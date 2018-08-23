@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mm.medicalman.RegisteredActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/background"
+        fresco:placeholderImageScaleType="focusCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView"
+        android:layout_width="107dp"
+        android:layout_height="106dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/logo"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sd_1"
+        android:layout_marginRight="67.3dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="输入手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="11.7dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#78b2bf"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.5dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="输入验证码"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingLeft="7.7dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#78b2bf"
+        android:textSize="16sp"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+    <EditText
+        android:layout_below="@+id/simpleDraweeView"
+        android:paddingLeft="7.7dp"
+        android:layout_marginTop="57dp"
+        android:layout_toEndOf="@+id/sd_1"
+        android:id="@+id/et_login_psw"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginRight="67.3dp"
+        android:hint="输入身份证号"
+        android:maxLength="18"
+        android:textColor="@color/mm_ziti_bai"
+        android:textColorHint="#78b2bf"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_code"
+        android:layout_width="72dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/btn_regist_5dp_coding"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_lin2"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="6.5dp"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="#ffffff" />
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignEnd="@+id/et_login_psw"
+        android:layout_alignRight="@+id/et_login_psw"
+        android:layout_below="@+id/et_login_psw"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@+id/sd_1"
+        android:layout_toRightOf="@+id/sd_1"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:background="#ffffff"
+        android:id="@+id/textView" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/button"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/sd_1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="68dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/mobile"
+        fresco:placeholderImageScaleType="fitCenter" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_1"
+        android:layout_width="28dp"
+        android:layout_height="21dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="3"
+        android:layout_marginTop="54.5dp"
+        android:layout_below="@+id/simpleDraweeView"
+        fresco:placeholderImage="@drawable/identity_card"
+        fresco:placeholderImageScaleType="fitCenter"
+        android:layout_marginLeft="64dp"
+ />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/button2"
+        android:layout_width="27dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="64.5dp"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/captcha"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/tv_lin2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/btn_regist_5dp"
+        android:text="查询"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    <include layout="@layout/toolbar"/>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="6dp"
+    android:orientation="vertical">
+
+    <com.mm.medicalman.Tool.WheelView
+        android:id="@+id/wheel_view_wv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_gravity="center_horizontal"
+        android:text="确定"
+        android:textColor="@color/mm_ziti_bai"
+        android:background="@drawable/button_rectangle_circl_5_timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

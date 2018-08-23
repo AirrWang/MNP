@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/mm_ziti_bai">
+    <TextView
+        android:id="@+id/tv_1"
+        android:text="name"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/c33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_2"
+                android:textSize="29sp"
+                android:textColor="#ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"/>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                fresco:fadeDuration="1"
+                fresco:placeholderImage="@drawable/test_record_time"
+                fresco:placeholderImageScaleType="fitCenter" />
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="#bebebe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/c66"
+            android:textSize="18sp"
+            android:gravity="center_vertical|end"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

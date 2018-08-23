@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_bai_5dp"
+    tools:context="com.mm.medicalman.Home.OpenSclloActivity">
+    <TextView
+        android:id="@+id/tv_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="17.5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#30a2be"
+        android:text="开通单位"/>
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_below="@+id/tv_open"
+        android:background="#d8d8d8"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tv_line"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingBottom="30dp"
+        android:id="@+id/rv_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

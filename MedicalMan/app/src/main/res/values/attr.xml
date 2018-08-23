@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ATProgressView">
+        <attr name="midlle_layer_progress_color" format="color" />
+        <attr name="midlle_layer_progress_width" format="dimension" />
+        <attr name="midlle_layer_small_circle_solide_color" format="color" />
+        <attr name="midlle_layer_small_circle_stroke_color" format="color" />
+        <attr name="midlle_layer_small_circle_size" format="dimension" />
+        <attr name="midlle_layer_small_circle_stroke_width" format="dimension" />
+
+    </declare-styleable>
+
+
+</resources>

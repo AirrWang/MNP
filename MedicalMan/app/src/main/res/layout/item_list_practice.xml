@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/mm_ziti_bai"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:id="@+id/ll"
+    android:gravity="center_vertical">
+<TextView
+    android:id="@id/tv_1"
+    android:layout_width="61dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/c33"
+    android:textSize="16sp"
+    tools:text="第21章"/>
+    <TextView
+        android:layout_marginLeft="1dp"
+        android:id="@id/tv_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/c33"
+        android:textSize="16sp"
+        tools:text="呼吸系统"/>
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@id/tv_3"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c66"
+        android:textSize="14sp"
+        tools:text="30"/>
+</LinearLayout>

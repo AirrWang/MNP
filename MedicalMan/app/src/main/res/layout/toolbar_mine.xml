@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_btl"
+    android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/d_btl"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColorPrimary="@color/mm_ziti_bai"
+    app:popupTheme="@style/Toobar"
+    app:theme="@style/Toobar">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:ems="8"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        tools:text="标题"
+        android:textColor="@color/mm_ziti_bai"
+        android:textSize="@dimen/d_btl_zt_size" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/toolbar_sd"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="4dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:padding="11dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="3"
+        fresco:placeholderImageScaleType="focusCrop" />
+</android.support.v7.widget.Toolbar>

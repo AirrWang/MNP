@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="123dp"
+    android:background="@color/mm_ziti_bai"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sd_pic"
+            android:layout_width="93dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="3"
+            fresco:placeholderImageScaleType="focusCrop" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="19dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/c33"
+                    android:textSize="16sp"
+                    tools:text="临床医学基础课程教学" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c98"
+                    android:textSize="12sp"
+                    tools:text="共8课时" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textColor="@color/c33"
+                        android:textSize="14sp"
+                        tools:text="王老师" />
+
+                    <TextView
+                        android:id="@+id/tv_haved_people"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="@color/c98"
+                        android:textSize="12sp"
+                        tools:text="已报名300人" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="44dp"
+                android:layout_height="26dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:textColor="@color/mm_ziti_bai"
+                android:textSize="12sp"
+                tools:text="文章" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#f2f2f2" />
+
+</LinearLayout>

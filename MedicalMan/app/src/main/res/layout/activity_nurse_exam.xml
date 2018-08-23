@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="368">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="3"
+            fresco:placeholderImage="@drawable/exam_background"
+            fresco:placeholderImageScaleType="focusCrop" />
+
+        <com.mm.medicalman.Tool.ATProgressView
+            android:id="@+id/pv_nurse_exam"
+            android:layout_width="168.5dp"
+            android:layout_height="168.5dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="95.5dp"
+            android:layout_height="95.5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_circl_exam"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_right_proportion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/mm_ziti_bai"
+                    android:textSize="36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/mm_ziti_bai"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正确率"
+                android:textColor="@color/mm_ziti_bai"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_num_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pv_nurse_exam"
+            android:layout_centerHorizontal="true"
+            android:text="累计答题0道"
+            android:textColor="@color/mm_ziti_bai"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="214"
+        android:background="@color/mm_ziti_bai"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_mock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="45.4dp"
+                android:layout_height="59.6dp"
+                fresco:fadeDuration="1"
+                fresco:placeholderImage="@drawable/exam_simulation_iocn"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.1dp"
+                android:text="模拟考试"
+                android:textColor="@color/c33"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_f2" />
+
+        <LinearLayout
+            android:id="@+id/ll_years"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="45.4dp"
+                android:layout_height="59.6dp"
+                fresco:fadeDuration="1"
+                fresco:placeholderImage="@drawable/exam_formerly_icon"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.1dp"
+                android:text="历年试题"
+                android:textColor="@color/c33"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="54"
+        android:background="@color/mm_ziti_bai"
+        android:gravity="center"
+        android:text="章节练习"
+        android:textColor="#238aa2"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="144"
+        android:background="@color/mm_ziti_bai"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_practice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实践能力"
+                android:textColor="@color/c33"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="共0道"
+                android:textColor="@color/c98"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_f2" />
+
+        <LinearLayout
+            android:id="@+id/ll_practice_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专业实务"
+                android:textColor="@color/c33"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="共0道"
+                android:textColor="@color/c98"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="144"
+        android:background="@color/mm_ziti_bai"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_mine_wrong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                fresco:fadeDuration="1"
+                fresco:placeholderImage="@drawable/exam_wrong_icon"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.1dp"
+                android:text="我的错题"
+                android:textColor="@color/c66"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_f2" />
+
+        <LinearLayout
+            android:id="@+id/ll_exam_his"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                fresco:fadeDuration="1"
+                fresco:placeholderImage="@drawable/exam_record_icon"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.1dp"
+                android:text="考试历史"
+                android:textColor="@color/c66"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_f2" />
+
+        <LinearLayout
+            android:id="@+id/ll_mine_love"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                fresco:fadeDuration="1"
+                fresco:placeholderImage="@drawable/exam_collect_icon"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.1dp"
+                android:text="我的收藏"
+                android:textColor="@color/c66"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

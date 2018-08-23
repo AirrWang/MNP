@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mm_ziti_bai"
+    android:gravity="center_horizontal">
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_marginTop="85dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            fresco:fadeDuration="1"
+            fresco:placeholderImage="@drawable/clear_cache"
+            fresco:placeholderImageScaleType="focusCrop"
+            />
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/mJindu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="#30a2be"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textSize="30sp"
+                android:textColor="#30a2be"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/mine_wipecache"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/btn_sc_btn_5dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:text="清除缓存" />
+
+</LinearLayout>

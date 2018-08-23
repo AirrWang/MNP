@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">医护人才</string>
+    <string name="not_wlan_show">请检查网络</string>
+    <string-array name="list_data_setting">
+        <item>意见反馈</item>
+        <item>清除缓存</item>
+        <item>检查更新</item>、
+        <item>关于</item>
+        <item>协议</item>
+    </string-array>
+</resources>

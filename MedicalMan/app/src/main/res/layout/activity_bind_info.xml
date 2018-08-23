@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_f2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mm_ziti_bai"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mm_ziti_bai"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c66"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/c66"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_xuehao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c66"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/c_f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mm_ziti_bai"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_kemu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="科目"
+                    android:textColor="@color/c66"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_scores"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="成绩"
+                    android:textColor="@color/c66"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.mm.medicalman.Tool.MyListView
+                android:id="@+id/list_chengji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mm_ziti_bai"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/c_f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mm_ziti_bai"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="86dp"
+                    android:layout_height="16dp"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="1"
+                    fresco:placeholderImage="@drawable/my_syllabus"
+                    fresco:placeholderImageScaleType="focusCrop" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:background="@color/mm_ziti_bai"
+                android:paddingBottom="10dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sd_timetable"
+                    android:layout_width="140dp"
+                    android:layout_height="99dp"
+                    android:layout_centerInParent="true"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="1"
+                    fresco:placeholderImage="@color/c_d8"
+                    fresco:placeholderImageScaleType="focusCrop" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/sd_timetable"
+                    android:text="点击放大"
+                    android:textColor="@color/c_99"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/mm_ziti_bai"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="16dp"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:fadeDuration="1"
+                    fresco:placeholderImage="@drawable/important_otice"
+                    fresco:placeholderImageScaleType="focusCrop" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/c_d8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+                <com.mm.medicalman.Tool.MyListView
+                    android:id="@+id/lv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" />
+                <TextView
+                    android:id="@+id/tv_null"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="暂无"
+                    android:textSize="14sp"
+                    android:textColor="@color/c_99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mm.medicalman.RegisteredActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/background"
+        fresco:placeholderImageScaleType="focusCrop" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView"
+        android:layout_width="107dp"
+        android:layout_height="106dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71.5dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/logo"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/simpleDraweeView"
+        android:layout_marginRight="67.3dp"
+        android:layout_marginTop="77dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#78b2bf"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="29.5dp"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="验证码"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingLeft="7.7dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#78b2bf"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_login_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginRight="67.3dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/sd_1"
+        android:background="#00000000"
+        android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890*^%$#@!~?./-+\][,\=_{}|`:;'"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:textColor="@color/mm_ziti_bai"
+        android:textColorHint="#78b2bf"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_code"
+        android:layout_width="72dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_regist_5dp_coding"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_lin2"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="7.7dp"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignEnd="@+id/et_login_psw"
+        android:layout_alignRight="@+id/et_login_psw"
+        android:layout_below="@+id/et_login_psw"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/sd_1"
+        android:layout_toRightOf="@+id/sd_1"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="#ffffff" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/button"
+        android:layout_width="20dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/simpleDraweeView"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="71dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/mobile"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_1"
+        android:layout_width="21dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/button2"
+        android:layout_marginLeft="67.5dp"
+        android:layout_marginTop="22dp"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/password"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/button2"
+        android:layout_width="27dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="28dp"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/captcha"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:layout_below="@+id/tv_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/btn_regist_5dp"
+        android:text="注册绑定"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23.5dp"
+        android:text="返回"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:id="@+id/tv_1"
+        android:textSize="16sp"
+        android:textColor="#97c2cc"
+        android:layout_below="@+id/button3"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已有账号，立即登录"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#78b2c0"
+            android:text="用户注册即代表同意"
+            />
+        <TextView
+            android:id="@+id/tv_registration_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#48a7c1"
+            android:text="《服务协议》"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

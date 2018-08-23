@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mm.medicalman.Home.CampusActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:fadeDuration="3"
+        fresco:placeholderImage="@drawable/background"
+        fresco:placeholderImageScaleType="focusCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="123" />
+
+        <TextView
+            android:id="@+id/tv_achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84.5dp"
+            android:layout_marginRight="84.5dp"
+            android:layout_weight="68"
+            android:background="@drawable/btn_73c1d5_5dp"
+            android:gravity="center"
+            android:text="成绩查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84.5dp"
+            android:layout_marginRight="84.5dp"
+            android:layout_weight="68"
+            android:background="@drawable/btn_73c1d5_5dp"
+            android:gravity="center"
+            android:text="课表查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_sigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84.5dp"
+            android:layout_marginRight="84.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="68"
+            android:background="@drawable/btn_73c1d5_5dp"
+            android:gravity="center"
+            android:text="签到"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="165" />
+
+        <TextView
+            android:id="@+id/tv_open_scllo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/why"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="开通单位"
+            android:textColor="#5a94a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="28" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:background="@color/mm_ziti_bai"
+        android:paddingLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="14dp"
+            android:textSize="15sp"
+            android:textColor="@color/c66"
+            android:text="考勤规则名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="14dp"
+            android:textSize="15sp"
+            android:textColor="@color/c33"
+            android:text="考勤规则名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/mm_ziti_bai"
+        android:paddingLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="14dp"
+            android:textSize="15sp"
+            android:textColor="@color/c66"
+            android:text="考勤时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="14dp"
+            android:textSize="15sp"
+            android:textColor="@color/c33"
+            android:text="考勤规则名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/mm_ziti_bai"
+        android:paddingLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="14dp"
+            android:textSize="15sp"
+            android:textColor="@color/c66"
+            android:text="考勤位置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_loction"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/c33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_marginBottom="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/c_99"
+            android:text="考勤规则名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
